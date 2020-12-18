@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: rgb(32, 32, 32);
+}
+
+.Header {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+
+    &__logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            padding-top: 4px;
+        }
+
+        p {
+            font-family: "Lato";
+            font-weight: 300;
+
+            span {
+                font-family: "Lato";
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        width: 500px;
+        justify-content: flex-end;
+
+        &__item {
+            display: inline-block;
+            padding-right: 16px;
+
+            &--no-padding {
+                padding: 0;
+            }
+        }
+    }
+}
