@@ -1,9 +1,20 @@
+// Variables
+
+$dark-grey: rgb(63, 63, 63);
+$animate: all 0.2s ease-in-out;
+
+// HTML
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", Helvetica, sans-serif;
     box-sizing: border-box;
     color: rgb(32, 32, 32);
+}
+
+body{
+    background-color: rgb(247, 247, 247);
 }
 
 .Header {
@@ -14,6 +25,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
+    background-color: white;
 
     &__logo {
         height: 100%;
@@ -21,14 +33,18 @@
         align-items: center;
 
         img {
+            height: 80%;
             padding-top: 4px;
         }
 
         p {
             font-family: "Lato";
             font-weight: 300;
+            font-size: 23px;
+            color: rgb(161, 161, 161);
 
             span {
+                color: $dark-grey;
                 font-family: "Lato";
                 font-weight: bold;
             }
@@ -43,9 +59,154 @@
         &__item {
             display: inline-block;
             padding-right: 16px;
+            text-decoration: none;
+            
+            &:hover {
+                color: lightgray;
+                transition: 200ms;
+            }
 
             &--no-padding {
                 padding: 0;
+            }
+        }
+    }
+}
+
+.Banner {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+   
+    
+
+    &__img {
+        width: 60vw;
+        padding: 32px 24px;
+    }
+    
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 24px;
+        width: 27.9vw;
+        height: 23vw;
+        
+        &__title {
+            color: $dark-grey;
+            font-family: "Lato";
+            font-size: 3.3vw;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+        &__description {
+            color: $dark-grey;
+            font-family: "Lato";
+            font-size: 2vw;
+        }
+
+        &__button {
+            font-family: "Lato";
+            font-size: 1.9vw;
+            border: none;
+            background-color: $dark-grey;
+            color: whitesmoke;
+            padding: 8px;
+            width: 90%;
+
+            &:hover {
+                background-color: whitesmoke;
+                color: $dark-grey;
+                transition: 200ms;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.Info {
+    
+    &__left-box {
+        float: left;
+        width: 60%;
+        border-right: 1px solid lightgrey;
+
+        &__img {
+            width: 100%;
+            padding: 32px 24px;           
+        }
+
+        &__text {
+            margin-left: 24px;
+            width: 55vw;
+
+            &--big {
+                color: $dark-grey;
+                font-family: "Lato";
+                font-size: 3vw;
+                font-weight: bolder;
+                padding-bottom: 24px;
+            }
+            &--med {
+                color: rgb(134, 134, 134);
+                font-size: 0.9rem;
+                padding-bottom: 30px;
+            }
+            &--small {
+                font-size: .8rem;
+                padding-bottom: 32px;
+            }
+        }
+
+    }
+
+    &__right-box {
+        float: right;
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 32px - 16px;
+        
+        &__card {
+            padding: 16px;
+            width: 100%;
+
+            &:hover{
+                background-color: lightgray;
+                cursor: pointer;
+            }
+            img {
+                width: 35%;
+                float: left;
+                margin-right: 16px;
+            }
+            h1 {
+                color: $dark-grey;
+                font-family: "Lato";
+                font-size: 2.2vw;
+                font-weight: bolder;
+                padding-bottom: 8px;
+                padding-top: 11px;
+            }
+
+            p {
+                color: rgb(134, 134, 134);
+                font-size: 1.3vw;
+                padding-bottom: 8px;
+            }
+
+            a {
+                font-size: 1.4vw;
+                text-decoration: none;
+                color: rgb(28, 174, 223)
+            }
+            &--top-border {
+                border-top: 1px solid lightgrey;
             }
         }
     }

@@ -7,6 +7,10 @@
   color: #202020;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 .Header {
   height: 64px;
   width: 100%;
@@ -21,6 +25,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 24px;
+  background-color: white;
 }
 
 .Header__logo {
@@ -34,15 +39,19 @@
 }
 
 .Header__logo img {
+  height: 80%;
   padding-top: 4px;
 }
 
 .Header__logo p {
   font-family: "Lato";
   font-weight: 300;
+  font-size: 23px;
+  color: #a1a1a1;
 }
 
 .Header__logo p span {
+  color: #3f3f3f;
   font-family: "Lato";
   font-weight: bold;
 }
@@ -60,9 +69,172 @@
 .Header__nav__item {
   display: inline-block;
   padding-right: 16px;
+  text-decoration: none;
+}
+
+.Header__nav__item:hover {
+  color: lightgray;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .Header__nav__item--no-padding {
   padding: 0;
+}
+
+.Banner {
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 64px;
+}
+
+.Banner__img {
+  width: 60vw;
+  padding: 32px 24px;
+}
+
+.Banner__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 24px;
+  width: 27.9vw;
+  height: 23vw;
+}
+
+.Banner__box__title {
+  color: #3f3f3f;
+  font-family: "Lato";
+  font-size: 3.3vw;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.Banner__box__description {
+  color: #3f3f3f;
+  font-family: "Lato";
+  font-size: 2vw;
+}
+
+.Banner__box__button {
+  font-family: "Lato";
+  font-size: 1.9vw;
+  border: none;
+  background-color: #3f3f3f;
+  color: whitesmoke;
+  padding: 8px;
+  width: 90%;
+}
+
+.Banner__box__button:hover {
+  background-color: whitesmoke;
+  color: #3f3f3f;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.Info__left-box {
+  float: left;
+  width: 60%;
+  border-right: 1px solid lightgrey;
+}
+
+.Info__left-box__img {
+  width: 100%;
+  padding: 32px 24px;
+}
+
+.Info__left-box__text {
+  margin-left: 24px;
+  width: 55vw;
+}
+
+.Info__left-box__text--big {
+  color: #3f3f3f;
+  font-family: "Lato";
+  font-size: 3vw;
+  font-weight: bolder;
+  padding-bottom: 24px;
+}
+
+.Info__left-box__text--med {
+  color: #868686;
+  font-size: 0.9rem;
+  padding-bottom: 30px;
+}
+
+.Info__left-box__text--small {
+  font-size: .8rem;
+  padding-bottom: 32px;
+}
+
+.Info__right-box {
+  float: right;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 16px;
+}
+
+.Info__right-box__card {
+  padding: 16px;
+  width: 100%;
+}
+
+.Info__right-box__card:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.Info__right-box__card img {
+  width: 35%;
+  float: left;
+  margin-right: 16px;
+}
+
+.Info__right-box__card h1 {
+  color: #3f3f3f;
+  font-family: "Lato";
+  font-size: 2.2vw;
+  font-weight: bolder;
+  padding-bottom: 8px;
+  padding-top: 11px;
+}
+
+.Info__right-box__card p {
+  color: #868686;
+  font-size: 1.3vw;
+  padding-bottom: 8px;
+}
+
+.Info__right-box__card a {
+  font-size: 1.4vw;
+  text-decoration: none;
+  color: #1caedf;
+}
+
+.Info__right-box__card--top-border {
+  border-top: 1px solid lightgrey;
 }
 /*# sourceMappingURL=style.css.map */
