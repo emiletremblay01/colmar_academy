@@ -1,139 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colmar Academy</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resources/styles/style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/styles/style.css" />
+  </head>
+  <body>
     <!-- Header -->
 
     <div class="Header">
-        <div class="Header__logo">
-            <img src="resources/images/ic-logo.svg" alt="logo">
+      <div class="center-container">
+        <div class="Header__navbar">
+          <div class="Header__logo">
+            <img src="resources/images/ic-logo.svg" alt="logo" />
             <p><span>COLMAR</span>ACADEMY</p>
+          </div>
+          <div class="Header__nav">
+            <a href="">On campus</a>
+            <a href="">Online</a>
+            <a href="">For companies</a>
+            <a href="">Sign in</a>
+          </div>
         </div>
-        <div class="Header__nav">
-            <a href="" class="Header__nav__item">On campus</a>
-            <a href="" class="Header__nav__item">Online</a>
-            <a href="" class="Header__nav__item">For companies</a>
-            <a href="" class="Header__nav__item Header__nav__item--no-padding">Sign in</a>
+        <div class="Header__mobile">
+          <img src="resources/images/ic-logo.svg" alt=" colma academy icon" />
+          <img src="resources/images/ic-on-campus.svg" alt="campus icon" />
+          <img src="resources/images/ic-online.svg" alt="online icon" />
+          <img src="resources/images/ic-login.svg" alt="login icon" />
         </div>
+      </div>
     </div>
-    
+
     <!-- Content -->
 
     <div class="Banner">
-        <img class="Banner__img" src="resources/images/banner.jpg" alt="people studying">
-        <div class="Banner__box">
-            <p class="Banner__box__title">Learn something new everyday</p>
-            <p class="Banner__box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button class="Banner__box__button">Start here</button>
+      <div class="center-container">
+        <!-- mobile version -->
+        <div class="mobile">
+          <img src="resources/images/banner.jpg" alt="people studying" />
+          <div class="Banner__text">
+            <h1>
+              Learn something<br />
+              new everyday
+            </h1>
+            <h2>
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit.
+            </h2>
+            <button>Start here</button>
+          </div>
         </div>
+        <!-- desktop version -->
+        <div class="split">
+          <div class="split__left">
+            <img src="resources/images/banner.jpg" alt="people studying" />
+          </div>
+          <div class="split__right">
+            <div class="Banner__text">
+              <h1>
+                Learn something<br />
+                new everyday
+              </h1>
+              <h2>
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit.
+              </h2>
+              <button>Start here</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="Info">
-        <div class="Info__left-box">
-            <img class="Info__left-box__img" src="resources/images/information-main.jpg" alt="someone reading">
-            <p class="Info__left-box__text Info__left-box__text--big">It doesn't hurt to keep practicing</p>
-            <p class="Info__left-box__text Info__left-box__text--med">Ex proident incididunt proident sint et laboris. Consectetur consequat pariatur excepteur occaecat consequat pariatur voluptate in. Commodo esse officia nisi cillum incididunt incididunt occaecat Lorem consequat officia anim nostrud incididunt. Adipisicing adipisicing sint fugiat ut labore incididunt Lorem.</p>
-            <p class="Info__left-box__text Info__left-box__text--small">Emanuel, Sr Strategist at Hiring.com</p>
-        </div>
-        <div class="Info__right-box">
+      <div class="center-container">
+        <!-- mobile  version -->
+        <div class="mobile">
+          <div class="Info__right-box">
             <div class="Info__right-box__card">
-                <img src="resources/images/information-orientation.jpg" alt="orientation">
+              <img
+                class="mobile"
+                src="resources/images/information-orientation-mobile.jpg"
+                alt="orientation"
+              />
+              <img
+                class="desktop"
+                src="resources/images/information-orientation.jpg"
+                alt="orientation"
+              />
+              <div class="text-container">
                 <h1>Orientation date</h1>
                 <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
                 <a href="">Read more</a>
+              </div>
             </div>
-            <div class="Info__right-box__card Info__right-box__card--top-border">
-                <img src="resources/images/information-campus.jpg" alt="interior room in the campus">
+            <div class="Info__right-box__card">
+              <img
+                class="mobile"
+                src="resources/images/information-campus-mobile.jpg"
+                alt="interior room in the campus"
+              />
+              <img
+                class="desktop"
+                src="resources/images/information-campus.jpg"
+                alt="interior room in the campus"
+              />
+              <div class="text-container">
                 <h1>Our campus</h1>
                 <p>Find which campus is close by you</p>
                 <a href="">Read more</a>
+              </div>
             </div>
-            <div class="Info__right-box__card Info__right-box__card--top-border">
-                <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
-                <h1>Our guest lecture</h1>
-                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <div class="Info__right-box__card">
+              <img
+                class="mobile"
+                src="resources/images/information-guest-lecture-mobile.jpg"
+                alt="Oliver Sack"
+              />
+              <img
+                class="desktop"
+                src="resources/images/information-guest-lecture.jpg"
+                alt="Oliver Sack"
+              />
+              <div class="text-container">
+                <h1 class="mobile">Special guest lecture</h1>
+                <h1 class="desktop">Our guest lecture</h1>
+                <p>
+                  Join a keynote with Oliver Sack about music in medical
+                  treatment
+                </p>
                 <a href="">Read more</a>
+              </div>
             </div>
+          </div>
         </div>
+        <!-- desktop version -->
+        <div class="desktop">
+          <div class="split">
+            <div class="split__left">
+              <img
+                src="resources/images/information-main.jpg"
+                alt="someone reading"
+              />
+              <h1>It doesn't hurt to keep practicing</h1>
+              <h2>
+                Ex proident incididunt proident sint et laboris. Consectetur
+                consequat pariatur excepteur occaecat consequat pariatur
+                voluptate in. Commodo esse officia nisi cillum incididunt
+                incididunt occaecat Lorem consequat officia anim nostrud
+                incididunt. Adipisicing adipisicing sint fugiat ut labore
+                incididunt Lorem.
+              </h2>
+              <p>Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+            <div class="split__right">
+              <div class="info-card">
+                <img
+                  src="resources/images/information-orientation.jpg"
+                  alt="orientation"
+                />
+                <div class="text-container">
+                  <h1>Orientation date</h1>
+                  <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+              <div class="info-card">
+                <img
+                  src="resources/images/information-campus.jpg"
+                  alt="interior room in the campus"
+                />
+                <div class="text-container">
+                  <h1>Our campus</h1>
+                  <p>Find which campus is close by you</p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+              <div class="info-card">
+                <img
+                  src="resources/images/information-guest-lecture.jpg"
+                  alt="Oliver Sack"
+                />
+                <div class="text-container">
+                  <h1 class="mobile">Special guest lecture</h1>
+                  <h1 class="desktop">Our guest lecture</h1>
+                  <p>
+                    Join a keynote with Oliver Sack about music in medical
+                    treatment
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="Courses">
-        <div class="Courses__header">Start learning</div>
-        <div class="Courses__container">
-            <div class="Courses__container__card">
-                <img src="resources/images/course-software.jpg" alt="computers">
-                <h1>Software engineering</h1>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
-            </div>
-            <div class="Courses__container__card">
-                <img src="resources/images/course-computer-art.jpg" alt="phone in hand">
-                <h1>Computer art</h1>
-                <p>COURSES</p>
-                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-            </div>
-            <div class="Courses__container__card">
-                <img src="resources/images/course-design.jpg" alt="camera in student hands">
-                <h1>Design</h1>
-                <p>COURSES</p>
-                <p>User Experience Design, User Research, Visual Design</p>
-            </div>
-            <div class="Courses__container__card">
-                <img src="resources/images/course-data.jpg" alt="computer screen showing data graphics">
-                <h1>Data</h1>
-                <p>COURSES</p>
-                <p>Data Science, Big Data, SQL, Data Visualization</p>
-            </div>
-            <div class="Courses__container__card">
-                <img src="resources/images/course-business.jpg" alt="chess pieces">
-                <h1>Business</h1>
-                <p>COURSES</p>
-                <p>Product Development, Business Development, Startup</p>
-            </div>
-            <div class="Courses__container__card">
-                <img src="resources/images/course-marketing.jpg" alt="someone using a smartwatch">
-                <h1>Marketing</h1>
-                <p>COURSES</p>
-                <p>Analytics, Content Marketing, Mobile Marketing</p>
-            </div>
+      <div class="center-container">
+        <h1>Start learning</h1>
+
+        <div class="mobile">
+          <h1>Software engineering</h1>
+          <h1>Computer art</h1>
+          <h1>Design</h1>
+          <h1>Data</h1>
+          <h1>Business</h1>
+          <h1 class="no-margin-bot">Marketing</h1>
         </div>
+        <div class="desktop">
+          <div class="Courses__container">
+            <div class="Courses__container__card">
+              <img src="resources/images/course-software.jpg" alt="computers" />
+              <h1>Software engineering</h1>
+              <p>COURSES</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+
+            <div class="Courses__container__card">
+              <img
+                src="resources/images/course-computer-art.jpg"
+                alt="phone in hand"
+              />
+              <h1>Computer art</h1>
+              <p>COURSES</p>
+              <p>
+                Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                Computer Animation
+              </p>
+            </div>
+            <div class="Courses__container__card">
+              <img
+                src="resources/images/course-design.jpg"
+                alt="camera in student hands"
+              />
+              <h1>Design</h1>
+              <p>COURSES</p>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+            <div class="Courses__container__card">
+              <img
+                src="resources/images/course-data.jpg"
+                alt="computer screen showing data graphics"
+              />
+              <h1>Data</h1>
+              <p>COURSES</p>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+            <div class="Courses__container__card">
+              <img
+                src="resources/images/course-business.jpg"
+                alt="chess pieces"
+              />
+              <h1>Business</h1>
+              <p>COURSES</p>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+            <div class="Courses__container__card">
+              <img
+                src="resources/images/course-marketing.jpg"
+                alt="someone using a smartwatch"
+              />
+              <h1>Marketing</h1>
+              <p>COURSES</p>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="Thesis">
-        <div class="Thesis__header">Thesis exhibit</div>
-        <div class="Thesis__left">
-            <video src="resources/videos/thesis.mp4" controls></video>
-            <h1>Reimagine urban</h1>
-            <p>Culpa exercitation consequat aliquip veniam occaecat nostrud sit nulla ut Lorem labore excepteur non id. Ex ut sit velit velit cillum sint voluptate adipisicing magna qui et magna elit non. Elit quis ullamco eu est irure mollit anim consequat anim est aute est eiusmod deserunt. Esse proident sunt officia mollit veniam ullamco non et. Sint irure amet qui reprehenderit. Reprehenderit occaecat et voluptate ipsum in do tempor sit ullamco laboris adipisicing. Do consequat elit non esse qui nisi.</p>
+      <div class="center-container">
+        <h1>Thesis exhibits</h1>
+        <div class="mobile">
+          <video src="resources/videos/thesis.mp4" controls></video>
         </div>
-        <div class="Thesis__right">
-            <div class="Thesis__right__card">
-                <img src="resources/images/thesis-fisma.jpg" alt="someone doing prototype sketches">
-                <h1>Fisma: Design and Prototype</h1>
-                <p>Designer showcase of new prototype product</p>
+        <div class="desktop">
+          <div class="split">
+            <div class="split__left">
+              <video src="resources/videos/thesis.mp4" controls></video>
+              <h1>Reimagine urban</h1>
+              <p>
+                Culpa exercitation consequat aliquip veniam occaecat nostrud sit
+                nulla ut Lorem labore excepteur non id. Ex ut sit velit velit
+                cillum sint voluptate adipisicing magna qui et magna elit non.
+                Elit quis ullamco eu est irure mollit anim consequat anim est
+                aute est eiusmod deserunt.
+              </p>
             </div>
-            <div class="Thesis__right__card">
-                <img src="resources/images/thesis-now-and-then.jpg" alt="New York">
-                <h1>Now and then</h1>
-                <p>Research study about New York</p>
+            <div class="split__right">
+              <div class="info-card">
+                <img
+                  src="resources/images/thesis-fisma.jpg"
+                  alt="someone doing prototype sketches"
+                />
+                <div class="text-container">
+                  <h1>Fisma: Design and Prototype</h1>
+                  <p>Designer showcase of new prototype product</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <img
+                  src="resources/images/thesis-now-and-then.jpg"
+                  alt="New York"
+                />
+                <div class="text-container">
+                  <h1>Now and then</h1>
+                  <p>Research study about New York</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="Footer">
-        <div class="Footer__left">@ 2016 Colmar Academy. All rights reserved</div>
-        <div class="Footer__right">
+      <div class="center-container">
+        <div class="mobile">@ 2016 Colmar Academy. All rights reserved</div>
+        <div class="desktop">
+          <div class="left">@ 2016 Colmar Academy. All rights reserved</div>
+          <div class="right">
             <a href="">Terms</a>
             <a href="">Privacy</a>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
